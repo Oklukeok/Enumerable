@@ -1,10 +1,14 @@
-require './MyEnumerable'
+require './my_enumerable'
 
 class MyList
-  include MyEnumerable
+  include my_enumerable
 
   def initialize(*list)
     @list = list.to_a
+  end
+
+  def each
+    yield(@list)
   end
 end
 
