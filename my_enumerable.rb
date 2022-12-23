@@ -18,6 +18,6 @@ module MyEnumerable
     @list.each do |n|
       filtered_list << n if yield n
     end
-  filtered_list
+    filtered_list
   end
 end
